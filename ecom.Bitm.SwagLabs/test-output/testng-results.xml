@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="19" passed="19" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Login rejected for Username: invalid_username]]>
+    </line>
+    <line>
+      <![CDATA[Login rejected for Username: invalid_username]]>
+    </line>
+    <line>
+      <![CDATA[Login rejected for Username: standard_user]]>
+    </line>
+    <line>
+      <![CDATA[Login rejected for Username: ]]>
+    </line>
+    <line>
+      <![CDATA[Login rejected for Username: standard_user]]>
+    </line>
+    <line>
+      <![CDATA[Login rejected for Username: ]]>
+    </line>
+    <line>
+      <![CDATA[Login rejected for Username: standard_user    ]]>
+    </line>
+    <line>
+      <![CDATA[Login rejected for Username:     standard_user]]>
+    </line>
+    <line>
+      <![CDATA[Corresponding Product is navigated: Sauce Labs Backpack]]>
+    </line>
+    <line>
+      <![CDATA[Corresponding Product is navigated: Sauce Labs Bike Light]]>
+    </line>
+    <line>
+      <![CDATA[Corresponding Product is navigated: Sauce Labs Bolt T-Shirt]]>
+    </line>
+    <line>
+      <![CDATA[Corresponding Product is navigated: Sauce Labs Fleece Jacket]]>
+    </line>
+    <line>
+      <![CDATA[Corresponding Product is navigated: Sauce Labs Onesie]]>
+    </line>
+    <line>
+      <![CDATA[Product is not available:Test.allTheThings() T-Shirt]]>
+    </line>
+    <line>
+      <![CDATA[Corresponding Product is navigated: Test.allTheThings() T-Shirt]]>
+    </line>
+    <line>
+      <![CDATA[Product cart page is updated]]>
+    </line>
+    <line>
+      <![CDATA[TC_036 - Sorting works after adding item: Name (A to Z)]]>
+    </line>
+    <line>
+      <![CDATA[TC_036 - Sorting works after adding item: Name (Z to A)]]>
+    </line>
+    <line>
+      <![CDATA[TC_036 - Sorting works after adding item: Price (low to high)]]>
+    </line>
+    <line>
+      <![CDATA[TC_036 - Sorting works after adding item: Price (high to low)]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2026-10-08T12:09:45 IST" name="Negative Test cases" finished-at="2026-10-08T12:10:15 IST" duration-ms="29903">
+    <groups>
+      <group name="neg">
+        <method signature="Loginpage_Test.loginInvalid(java.lang.String,java.lang.String)[pri:2, instance:ecom.Bitm.SwagLabs.login.Loginpage_Test@233795b6]" name="loginInvalid" class="ecom.Bitm.SwagLabs.login.Loginpage_Test"/>
+        <method signature="ProductPage_Test.CorrespondingProductPage(java.lang.String)[pri:3, instance:ecom.Bitm.SwagLabs.Product.ProductPage_Test@9d5509a]" name="CorrespondingProductPage" class="ecom.Bitm.SwagLabs.Product.ProductPage_Test"/>
+        <method signature="ProductPage_Test.VerifyCartBadge()[pri:4, instance:ecom.Bitm.SwagLabs.Product.ProductPage_Test@9d5509a]" name="VerifyCartBadge" class="ecom.Bitm.SwagLabs.Product.ProductPage_Test"/>
+        <method signature="DropDownPage_Test.verifySortingAfterAddingItem(java.lang.String)[pri:6, instance:ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test@179ece50]" name="verifySortingAfterAddingItem" class="ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test"/>
+      </group> <!-- neg -->
+      <group name="functional">
+        <method signature="Loginpage_Test.loginInvalid(java.lang.String,java.lang.String)[pri:2, instance:ecom.Bitm.SwagLabs.login.Loginpage_Test@233795b6]" name="loginInvalid" class="ecom.Bitm.SwagLabs.login.Loginpage_Test"/>
+      </group> <!-- functional -->
+      <group name="pos">
+        <method signature="ProductPage_Test.CorrespondingProductPage(java.lang.String)[pri:3, instance:ecom.Bitm.SwagLabs.Product.ProductPage_Test@9d5509a]" name="CorrespondingProductPage" class="ecom.Bitm.SwagLabs.Product.ProductPage_Test"/>
+        <method signature="ProductPage_Test.VerifyCartBadge()[pri:4, instance:ecom.Bitm.SwagLabs.Product.ProductPage_Test@9d5509a]" name="VerifyCartBadge" class="ecom.Bitm.SwagLabs.Product.ProductPage_Test"/>
+        <method signature="DropDownPage_Test.verifySortingAfterAddingItem(java.lang.String)[pri:6, instance:ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test@179ece50]" name="verifySortingAfterAddingItem" class="ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test"/>
+      </group> <!-- pos -->
+      <group name="integration">
+        <method signature="ProductPage_Test.CorrespondingProductPage(java.lang.String)[pri:3, instance:ecom.Bitm.SwagLabs.Product.ProductPage_Test@9d5509a]" name="CorrespondingProductPage" class="ecom.Bitm.SwagLabs.Product.ProductPage_Test"/>
+        <method signature="ProductPage_Test.VerifyCartBadge()[pri:4, instance:ecom.Bitm.SwagLabs.Product.ProductPage_Test@9d5509a]" name="VerifyCartBadge" class="ecom.Bitm.SwagLabs.Product.ProductPage_Test"/>
+        <method signature="DropDownPage_Test.verifySortingAfterAddingItem(java.lang.String)[pri:6, instance:ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test@179ece50]" name="verifySortingAfterAddingItem" class="ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test"/>
+      </group> <!-- integration -->
+    </groups>
+    <test started-at="2026-10-08T12:09:45 IST" name="Negative Tests" finished-at="2026-10-08T12:10:15 IST" duration-ms="29903">
+      <class name="ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test@179ece50]" started-at="2026-10-08T12:10:03 IST" name="beforeClass" finished-at="2026-10-08T12:10:04 IST" duration-ms="1254" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test@179ece50]" started-at="2026-10-08T12:10:05 IST" name="beforeMethod" finished-at="2026-10-08T12:10:10 IST" duration-ms="5395" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifySortingAfterAddingItem(java.lang.String)[pri:6, instance:ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test@179ece50]" started-at="2026-10-08T12:10:10 IST" name="verifySortingAfterAddingItem" data-provider="sortingData" finished-at="2026-10-08T12:10:11 IST" duration-ms="1345" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Name (A to Z)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_036 - Sorting works after adding item: Name (A to Z)]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySortingAfterAddingItem -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test@179ece50]" started-at="2026-10-08T12:10:11 IST" name="beforeMethod" finished-at="2026-10-08T12:10:11 IST" duration-ms="92" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifySortingAfterAddingItem(java.lang.String)[pri:6, instance:ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test@179ece50]" started-at="2026-10-08T12:10:11 IST" name="verifySortingAfterAddingItem" data-provider="sortingData" finished-at="2026-10-08T12:10:13 IST" duration-ms="1121" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Name (Z to A)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_036 - Sorting works after adding item: Name (Z to A)]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySortingAfterAddingItem -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test@179ece50]" started-at="2026-10-08T12:10:13 IST" name="beforeMethod" finished-at="2026-10-08T12:10:13 IST" duration-ms="62" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifySortingAfterAddingItem(java.lang.String)[pri:6, instance:ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test@179ece50]" started-at="2026-10-08T12:10:13 IST" name="verifySortingAfterAddingItem" data-provider="sortingData" finished-at="2026-10-08T12:10:14 IST" duration-ms="1048" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Price (low to high)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_036 - Sorting works after adding item: Price (low to high)]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySortingAfterAddingItem -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test@179ece50]" started-at="2026-10-08T12:10:14 IST" name="beforeMethod" finished-at="2026-10-08T12:10:14 IST" duration-ms="73" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifySortingAfterAddingItem(java.lang.String)[pri:6, instance:ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test@179ece50]" started-at="2026-10-08T12:10:14 IST" name="verifySortingAfterAddingItem" data-provider="sortingData" finished-at="2026-10-08T12:10:15 IST" duration-ms="1061" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Price (high to low)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_036 - Sorting works after adding item: Price (high to low)]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySortingAfterAddingItem -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test@179ece50]" started-at="2026-10-08T12:10:15 IST" name="afterClass" finished-at="2026-10-08T12:10:15 IST" duration-ms="366" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test -->
+      <class name="ecom.Bitm.SwagLabs.login.Loginpage_Test">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:ecom.Bitm.SwagLabs.login.Loginpage_Test@233795b6]" started-at="2026-10-08T12:09:45 IST" name="beforeClass" finished-at="2026-10-08T12:09:47 IST" duration-ms="2190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.SwagLabs.login.Loginpage_Test@233795b6]" started-at="2026-10-08T12:09:49 IST" name="beforeMethod" finished-at="2026-10-08T12:09:50 IST" duration-ms="1243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginInvalid(java.lang.String,java.lang.String)[pri:2, instance:ecom.Bitm.SwagLabs.login.Loginpage_Test@233795b6]" started-at="2026-10-08T12:09:50 IST" name="loginInvalid" data-provider="loginDetails" finished-at="2026-10-08T12:09:51 IST" duration-ms="598" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalid_username]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalid_password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Login rejected for Username: invalid_username]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginInvalid -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.SwagLabs.login.Loginpage_Test@233795b6]" started-at="2026-10-08T12:09:51 IST" name="beforeMethod" finished-at="2026-10-08T12:09:51 IST" duration-ms="77" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginInvalid(java.lang.String,java.lang.String)[pri:2, instance:ecom.Bitm.SwagLabs.login.Loginpage_Test@233795b6]" started-at="2026-10-08T12:09:51 IST" name="loginInvalid" data-provider="loginDetails" finished-at="2026-10-08T12:09:51 IST" duration-ms="516" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalid_username]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Login rejected for Username: invalid_username]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginInvalid -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.SwagLabs.login.Loginpage_Test@233795b6]" started-at="2026-10-08T12:09:51 IST" name="beforeMethod" finished-at="2026-10-08T12:09:51 IST" duration-ms="54" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginInvalid(java.lang.String,java.lang.String)[pri:2, instance:ecom.Bitm.SwagLabs.login.Loginpage_Test@233795b6]" started-at="2026-10-08T12:09:51 IST" name="loginInvalid" data-provider="loginDetails" finished-at="2026-10-08T12:09:52 IST" duration-ms="413" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalid_password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Login rejected for Username: standard_user]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginInvalid -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.SwagLabs.login.Loginpage_Test@233795b6]" started-at="2026-10-08T12:09:52 IST" name="beforeMethod" finished-at="2026-10-08T12:09:52 IST" duration-ms="53" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginInvalid(java.lang.String,java.lang.String)[pri:2, instance:ecom.Bitm.SwagLabs.login.Loginpage_Test@233795b6]" started-at="2026-10-08T12:09:52 IST" name="loginInvalid" data-provider="loginDetails" finished-at="2026-10-08T12:09:52 IST" duration-ms="408" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Login rejected for Username: ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginInvalid -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.SwagLabs.login.Loginpage_Test@233795b6]" started-at="2026-10-08T12:09:52 IST" name="beforeMethod" finished-at="2026-10-08T12:09:52 IST" duration-ms="55" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginInvalid(java.lang.String,java.lang.String)[pri:2, instance:ecom.Bitm.SwagLabs.login.Loginpage_Test@233795b6]" started-at="2026-10-08T12:09:52 IST" name="loginInvalid" data-provider="loginDetails" finished-at="2026-10-08T12:09:53 IST" duration-ms="384" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Login rejected for Username: standard_user]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginInvalid -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.SwagLabs.login.Loginpage_Test@233795b6]" started-at="2026-10-08T12:09:53 IST" name="beforeMethod" finished-at="2026-10-08T12:09:53 IST" duration-ms="60" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginInvalid(java.lang.String,java.lang.String)[pri:2, instance:ecom.Bitm.SwagLabs.login.Loginpage_Test@233795b6]" started-at="2026-10-08T12:09:53 IST" name="loginInvalid" data-provider="loginDetails" finished-at="2026-10-08T12:09:53 IST" duration-ms="373" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Login rejected for Username: ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginInvalid -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.SwagLabs.login.Loginpage_Test@233795b6]" started-at="2026-10-08T12:09:53 IST" name="beforeMethod" finished-at="2026-10-08T12:09:53 IST" duration-ms="62" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginInvalid(java.lang.String,java.lang.String)[pri:2, instance:ecom.Bitm.SwagLabs.login.Loginpage_Test@233795b6]" started-at="2026-10-08T12:09:53 IST" name="loginInvalid" data-provider="loginDetails" finished-at="2026-10-08T12:09:53 IST" duration-ms="450" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user    ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Login rejected for Username: standard_user    ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginInvalid -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.SwagLabs.login.Loginpage_Test@233795b6]" started-at="2026-10-08T12:09:53 IST" name="beforeMethod" finished-at="2026-10-08T12:09:54 IST" duration-ms="57" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginInvalid(java.lang.String,java.lang.String)[pri:2, instance:ecom.Bitm.SwagLabs.login.Loginpage_Test@233795b6]" started-at="2026-10-08T12:09:54 IST" name="loginInvalid" data-provider="loginDetails" finished-at="2026-10-08T12:09:54 IST" duration-ms="431" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[    standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Login rejected for Username:     standard_user]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginInvalid -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:ecom.Bitm.SwagLabs.login.Loginpage_Test@233795b6]" started-at="2026-10-08T12:09:54 IST" name="afterClass" finished-at="2026-10-08T12:09:54 IST" duration-ms="380" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- ecom.Bitm.SwagLabs.login.Loginpage_Test -->
+      <class name="ecom.Bitm.SwagLabs.Product.ProductPage_Test">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:ecom.Bitm.SwagLabs.Product.ProductPage_Test@9d5509a]" started-at="2026-10-08T12:09:54 IST" name="beforeClass" finished-at="2026-10-08T12:09:56 IST" duration-ms="1261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.SwagLabs.Product.ProductPage_Test@9d5509a]" started-at="2026-10-08T12:09:56 IST" name="beforeMethod" finished-at="2026-10-08T12:09:57 IST" duration-ms="943" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="CorrespondingProductPage(java.lang.String)[pri:3, instance:ecom.Bitm.SwagLabs.Product.ProductPage_Test@9d5509a]" started-at="2026-10-08T12:09:57 IST" name="CorrespondingProductPage" data-provider="productData" finished-at="2026-10-08T12:09:57 IST" duration-ms="577" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sauce Labs Backpack]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Corresponding Product is navigated: Sauce Labs Backpack]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CorrespondingProductPage -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.SwagLabs.Product.ProductPage_Test@9d5509a]" started-at="2026-10-08T12:09:57 IST" name="beforeMethod" finished-at="2026-10-08T12:09:57 IST" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="CorrespondingProductPage(java.lang.String)[pri:3, instance:ecom.Bitm.SwagLabs.Product.ProductPage_Test@9d5509a]" started-at="2026-10-08T12:09:57 IST" name="CorrespondingProductPage" data-provider="productData" finished-at="2026-10-08T12:09:58 IST" duration-ms="415" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sauce Labs Bike Light]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Corresponding Product is navigated: Sauce Labs Bike Light]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CorrespondingProductPage -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.SwagLabs.Product.ProductPage_Test@9d5509a]" started-at="2026-10-08T12:09:58 IST" name="beforeMethod" finished-at="2026-10-08T12:09:58 IST" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="CorrespondingProductPage(java.lang.String)[pri:3, instance:ecom.Bitm.SwagLabs.Product.ProductPage_Test@9d5509a]" started-at="2026-10-08T12:09:58 IST" name="CorrespondingProductPage" data-provider="productData" finished-at="2026-10-08T12:09:58 IST" duration-ms="421" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sauce Labs Bolt T-Shirt]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Corresponding Product is navigated: Sauce Labs Bolt T-Shirt]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CorrespondingProductPage -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.SwagLabs.Product.ProductPage_Test@9d5509a]" started-at="2026-10-08T12:09:58 IST" name="beforeMethod" finished-at="2026-10-08T12:09:58 IST" duration-ms="61" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="CorrespondingProductPage(java.lang.String)[pri:3, instance:ecom.Bitm.SwagLabs.Product.ProductPage_Test@9d5509a]" started-at="2026-10-08T12:09:58 IST" name="CorrespondingProductPage" data-provider="productData" finished-at="2026-10-08T12:09:59 IST" duration-ms="422" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sauce Labs Fleece Jacket]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Corresponding Product is navigated: Sauce Labs Fleece Jacket]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CorrespondingProductPage -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.SwagLabs.Product.ProductPage_Test@9d5509a]" started-at="2026-10-08T12:09:59 IST" name="beforeMethod" finished-at="2026-10-08T12:09:59 IST" duration-ms="71" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="CorrespondingProductPage(java.lang.String)[pri:3, instance:ecom.Bitm.SwagLabs.Product.ProductPage_Test@9d5509a]" started-at="2026-10-08T12:09:59 IST" name="CorrespondingProductPage" data-provider="productData" finished-at="2026-10-08T12:09:59 IST" duration-ms="469" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sauce Labs Onesie]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Corresponding Product is navigated: Sauce Labs Onesie]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CorrespondingProductPage -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.SwagLabs.Product.ProductPage_Test@9d5509a]" started-at="2026-10-08T12:09:59 IST" name="beforeMethod" finished-at="2026-10-08T12:09:59 IST" duration-ms="73" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="CorrespondingProductPage(java.lang.String)[pri:3, instance:ecom.Bitm.SwagLabs.Product.ProductPage_Test@9d5509a]" started-at="2026-10-08T12:09:59 IST" name="CorrespondingProductPage" data-provider="productData" finished-at="2026-10-08T12:10:00 IST" duration-ms="717" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test.allTheThings() T-Shirt]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Product is not available:Test.allTheThings() T-Shirt]]>
+            </line>
+            <line>
+              <![CDATA[Corresponding Product is navigated: Test.allTheThings() T-Shirt]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CorrespondingProductPage -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.SwagLabs.Product.ProductPage_Test@9d5509a]" started-at="2026-10-08T12:10:00 IST" name="beforeMethod" finished-at="2026-10-08T12:10:00 IST" duration-ms="68" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="VerifyCartBadge()[pri:4, instance:ecom.Bitm.SwagLabs.Product.ProductPage_Test@9d5509a]" started-at="2026-10-08T12:10:00 IST" name="VerifyCartBadge" finished-at="2026-10-08T12:10:03 IST" duration-ms="2531" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Product cart page is updated]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- VerifyCartBadge -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:ecom.Bitm.SwagLabs.Product.ProductPage_Test@9d5509a]" started-at="2026-10-08T12:10:03 IST" name="afterClass" finished-at="2026-10-08T12:10:03 IST" duration-ms="413" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- ecom.Bitm.SwagLabs.Product.ProductPage_Test -->
+    </test> <!-- Negative Tests -->
+  </suite> <!-- Negative Test cases -->
+</testng-results>

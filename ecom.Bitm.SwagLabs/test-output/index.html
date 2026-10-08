@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Negative_Test_cases" class="navigator-link">
+              <span class="suite-name border-passed">Negative Test cases</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Negative_Test_cases" class="navigator-link ">
+                    <span>E:\final testing\ecom.Bitm.SwagLabs\NegativeTestCase.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Negative_Test_cases" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Negative_Test_cases" class="navigator-link ">
+                    <span>4 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Negative_Test_cases" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Negative_Test_cases" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Negative_Test_cases" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Negative_Test_cases" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">19 methods,   19 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Negative_Test_cases" class="hide-methods passed suite-Negative_Test_cases"> (hide)</a> <!-- hide-methods passed suite-Negative_Test_cases -->
+                      <a href="#" panel-name="suite-Negative_Test_cases" class="show-methods passed suite-Negative_Test_cases"> (show)</a> <!-- show-methods passed suite-Negative_Test_cases -->
+                    </span>
+                    <div class="method-list-content passed suite-Negative_Test_cases">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Negative_Test_cases" title="ecom.Bitm.SwagLabs.Product.ProductPage_Test" class="method navigator-link" hash-for-method="CorrespondingProductPage(Sauce Labs Bolt T-Shirt)">CorrespondingProductPage(Sauce Labs Bolt T-Shirt)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Negative_Test_cases" title="ecom.Bitm.SwagLabs.Product.ProductPage_Test" class="method navigator-link" hash-for-method="CorrespondingProductPage(Sauce Labs Bike Light)">CorrespondingProductPage(Sauce Labs Bike Light)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Negative_Test_cases" title="ecom.Bitm.SwagLabs.Product.ProductPage_Test" class="method navigator-link" hash-for-method="CorrespondingProductPage(Sauce Labs Onesie)">CorrespondingProductPage(Sauce Labs Onesie)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Negative_Test_cases" title="ecom.Bitm.SwagLabs.Product.ProductPage_Test" class="method navigator-link" hash-for-method="CorrespondingProductPage(Test.allTheThings() T-Shirt)">CorrespondingProductPage(Test.allTheThings() T-Shirt)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Negative_Test_cases" title="ecom.Bitm.SwagLabs.Product.ProductPage_Test" class="method navigator-link" hash-for-method="CorrespondingProductPage(Sauce Labs Fleece Jacket)">CorrespondingProductPage(Sauce Labs Fleece Jacket)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Negative_Test_cases" title="ecom.Bitm.SwagLabs.Product.ProductPage_Test" class="method navigator-link" hash-for-method="CorrespondingProductPage(Sauce Labs Backpack)">CorrespondingProductPage(Sauce Labs Backpack)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Negative_Test_cases" title="ecom.Bitm.SwagLabs.Product.ProductPage_Test" class="method navigator-link" hash-for-method="VerifyCartBadge">VerifyCartBadge</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Negative_Test_cases" title="ecom.Bitm.SwagLabs.login.Loginpage_Test" class="method navigator-link" hash-for-method="loginInvalid(standard_user    , secret_sauce)">loginInvalid(standard_user    , secret_sauce)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Negative_Test_cases" title="ecom.Bitm.SwagLabs.login.Loginpage_Test" class="method navigator-link" hash-for-method="loginInvalid(invalid_username, secret_sauce)">loginInvalid(invalid_username, secret_sauce)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Negative_Test_cases" title="ecom.Bitm.SwagLabs.login.Loginpage_Test" class="method navigator-link" hash-for-method="loginInvalid(, )">loginInvalid(, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Negative_Test_cases" title="ecom.Bitm.SwagLabs.login.Loginpage_Test" class="method navigator-link" hash-for-method="loginInvalid(    standard_user, secret_sauce)">loginInvalid(    standard_user, secret_sauce)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Negative_Test_cases" title="ecom.Bitm.SwagLabs.login.Loginpage_Test" class="method navigator-link" hash-for-method="loginInvalid(, secret_sauce)">loginInvalid(, secret_sauce)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Negative_Test_cases" title="ecom.Bitm.SwagLabs.login.Loginpage_Test" class="method navigator-link" hash-for-method="loginInvalid(invalid_username, invalid_password)">loginInvalid(invalid_username, invalid_password)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Negative_Test_cases" title="ecom.Bitm.SwagLabs.login.Loginpage_Test" class="method navigator-link" hash-for-method="loginInvalid(standard_user, invalid_password)">loginInvalid(standard_user, invalid_password)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Negative_Test_cases" title="ecom.Bitm.SwagLabs.login.Loginpage_Test" class="method navigator-link" hash-for-method="loginInvalid(standard_user, )">loginInvalid(standard_user, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Negative_Test_cases" title="ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test" class="method navigator-link" hash-for-method="verifySortingAfterAddingItem(Name (A to Z))">verifySortingAfterAddingItem(Name (A to Z))</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Negative_Test_cases" title="ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test" class="method navigator-link" hash-for-method="verifySortingAfterAddingItem(Price (low to high))">verifySortingAfterAddingItem(Price (low to high))</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Negative_Test_cases" title="ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test" class="method navigator-link" hash-for-method="verifySortingAfterAddingItem(Price (high to low))">verifySortingAfterAddingItem(Price (high to low))</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Negative_Test_cases" title="ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test" class="method navigator-link" hash-for-method="verifySortingAfterAddingItem(Name (Z to A))">verifySortingAfterAddingItem(Name (Z to A))</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Negative_Test_cases -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Negative_Test_cases" class="panel Negative_Test_cases">
+          <div class="suite-Negative_Test_cases-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySortingAfterAddingItem(Name (A to Z))">
+                  </a> <!-- verifySortingAfterAddingItem(Name (A to Z)) -->
+                  <span class="method-name">verifySortingAfterAddingItem</span>
+                  <span class="parameters">(Name (A to Z))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySortingAfterAddingItem(Price (low to high))">
+                  </a> <!-- verifySortingAfterAddingItem(Price (low to high)) -->
+                  <span class="method-name">verifySortingAfterAddingItem</span>
+                  <span class="parameters">(Price (low to high))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySortingAfterAddingItem(Price (high to low))">
+                  </a> <!-- verifySortingAfterAddingItem(Price (high to low)) -->
+                  <span class="method-name">verifySortingAfterAddingItem</span>
+                  <span class="parameters">(Price (high to low))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySortingAfterAddingItem(Name (Z to A))">
+                  </a> <!-- verifySortingAfterAddingItem(Name (Z to A)) -->
+                  <span class="method-name">verifySortingAfterAddingItem</span>
+                  <span class="parameters">(Name (Z to A))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Negative_Test_cases-class-passed -->
+          <div class="suite-Negative_Test_cases-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ecom.Bitm.SwagLabs.Product.ProductPage_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CorrespondingProductPage(Sauce Labs Bolt T-Shirt)">
+                  </a> <!-- CorrespondingProductPage(Sauce Labs Bolt T-Shirt) -->
+                  <span class="method-name">CorrespondingProductPage</span>
+                  <span class="parameters">(Sauce Labs Bolt T-Shirt)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CorrespondingProductPage(Sauce Labs Bike Light)">
+                  </a> <!-- CorrespondingProductPage(Sauce Labs Bike Light) -->
+                  <span class="method-name">CorrespondingProductPage</span>
+                  <span class="parameters">(Sauce Labs Bike Light)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CorrespondingProductPage(Sauce Labs Onesie)">
+                  </a> <!-- CorrespondingProductPage(Sauce Labs Onesie) -->
+                  <span class="method-name">CorrespondingProductPage</span>
+                  <span class="parameters">(Sauce Labs Onesie)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CorrespondingProductPage(Test.allTheThings() T-Shirt)">
+                  </a> <!-- CorrespondingProductPage(Test.allTheThings() T-Shirt) -->
+                  <span class="method-name">CorrespondingProductPage</span>
+                  <span class="parameters">(Test.allTheThings() T-Shirt)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CorrespondingProductPage(Sauce Labs Fleece Jacket)">
+                  </a> <!-- CorrespondingProductPage(Sauce Labs Fleece Jacket) -->
+                  <span class="method-name">CorrespondingProductPage</span>
+                  <span class="parameters">(Sauce Labs Fleece Jacket)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CorrespondingProductPage(Sauce Labs Backpack)">
+                  </a> <!-- CorrespondingProductPage(Sauce Labs Backpack) -->
+                  <span class="method-name">CorrespondingProductPage</span>
+                  <span class="parameters">(Sauce Labs Backpack)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyCartBadge">
+                  </a> <!-- VerifyCartBadge -->
+                  <span class="method-name">VerifyCartBadge</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Negative_Test_cases-class-passed -->
+          <div class="suite-Negative_Test_cases-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ecom.Bitm.SwagLabs.login.Loginpage_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginInvalid(standard_user    , secret_sauce)">
+                  </a> <!-- loginInvalid(standard_user    , secret_sauce) -->
+                  <span class="method-name">loginInvalid</span>
+                  <span class="parameters">(standard_user    ,secret_sauce)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginInvalid(invalid_username, secret_sauce)">
+                  </a> <!-- loginInvalid(invalid_username, secret_sauce) -->
+                  <span class="method-name">loginInvalid</span>
+                  <span class="parameters">(invalid_username,secret_sauce)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginInvalid(, )">
+                  </a> <!-- loginInvalid(, ) -->
+                  <span class="method-name">loginInvalid</span>
+                  <span class="parameters">(,)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginInvalid(    standard_user, secret_sauce)">
+                  </a> <!-- loginInvalid(    standard_user, secret_sauce) -->
+                  <span class="method-name">loginInvalid</span>
+                  <span class="parameters">(    standard_user,secret_sauce)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginInvalid(, secret_sauce)">
+                  </a> <!-- loginInvalid(, secret_sauce) -->
+                  <span class="method-name">loginInvalid</span>
+                  <span class="parameters">(,secret_sauce)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginInvalid(invalid_username, invalid_password)">
+                  </a> <!-- loginInvalid(invalid_username, invalid_password) -->
+                  <span class="method-name">loginInvalid</span>
+                  <span class="parameters">(invalid_username,invalid_password)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginInvalid(standard_user, invalid_password)">
+                  </a> <!-- loginInvalid(standard_user, invalid_password) -->
+                  <span class="method-name">loginInvalid</span>
+                  <span class="parameters">(standard_user,invalid_password)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginInvalid(standard_user, )">
+                  </a> <!-- loginInvalid(standard_user, ) -->
+                  <span class="method-name">loginInvalid</span>
+                  <span class="parameters">(standard_user,)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Negative_Test_cases-class-passed -->
+        </div> <!-- panel Negative_Test_cases -->
+        <div panel-name="test-xml-Negative_Test_cases" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\final testing\ecom.Bitm.SwagLabs\NegativeTestCase.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Negative Test cases&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;neg&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;neg&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Negative Tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;ecom.Bitm.SwagLabs.login.Loginpage_Test&quot;/&gt;
+      &lt;class name=&quot;ecom.Bitm.SwagLabs.Product.ProductPage_Test&quot;/&gt;
+      &lt;class name=&quot;ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Negative Tests --&gt;
+&lt;/suite&gt; &lt;!-- Negative Test cases --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Negative_Test_cases" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Negative Test cases</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Negative Tests (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Negative_Test_cases" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Negative Test cases</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">functional</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginInvalid</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">integration</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">CorrespondingProductPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">VerifyCartBadge</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifySortingAfterAddingItem</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">neg</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">CorrespondingProductPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">VerifyCartBadge</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginInvalid</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifySortingAfterAddingItem</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">pos</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">CorrespondingProductPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">VerifyCartBadge</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifySortingAfterAddingItem</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Negative_Test_cases" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Negative Test cases</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Negative_Test_cases');
+function tableData_Negative_Test_cases() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(19);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'VerifyCartBadge')
+data.setCell(0, 2, 'ecom.Bitm.SwagLabs.Product.ProductPage_Test')
+data.setCell(0, 3, 2531);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifySortingAfterAddingItem')
+data.setCell(1, 2, 'ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test')
+data.setCell(1, 3, 1345);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifySortingAfterAddingItem')
+data.setCell(2, 2, 'ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test')
+data.setCell(2, 3, 1121);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifySortingAfterAddingItem')
+data.setCell(3, 2, 'ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test')
+data.setCell(3, 3, 1061);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifySortingAfterAddingItem')
+data.setCell(4, 2, 'ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test')
+data.setCell(4, 3, 1048);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'CorrespondingProductPage')
+data.setCell(5, 2, 'ecom.Bitm.SwagLabs.Product.ProductPage_Test')
+data.setCell(5, 3, 717);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'loginInvalid')
+data.setCell(6, 2, 'ecom.Bitm.SwagLabs.login.Loginpage_Test')
+data.setCell(6, 3, 598);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'CorrespondingProductPage')
+data.setCell(7, 2, 'ecom.Bitm.SwagLabs.Product.ProductPage_Test')
+data.setCell(7, 3, 577);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'loginInvalid')
+data.setCell(8, 2, 'ecom.Bitm.SwagLabs.login.Loginpage_Test')
+data.setCell(8, 3, 516);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'CorrespondingProductPage')
+data.setCell(9, 2, 'ecom.Bitm.SwagLabs.Product.ProductPage_Test')
+data.setCell(9, 3, 469);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'loginInvalid')
+data.setCell(10, 2, 'ecom.Bitm.SwagLabs.login.Loginpage_Test')
+data.setCell(10, 3, 450);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'loginInvalid')
+data.setCell(11, 2, 'ecom.Bitm.SwagLabs.login.Loginpage_Test')
+data.setCell(11, 3, 431);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'CorrespondingProductPage')
+data.setCell(12, 2, 'ecom.Bitm.SwagLabs.Product.ProductPage_Test')
+data.setCell(12, 3, 422);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'CorrespondingProductPage')
+data.setCell(13, 2, 'ecom.Bitm.SwagLabs.Product.ProductPage_Test')
+data.setCell(13, 3, 421);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'CorrespondingProductPage')
+data.setCell(14, 2, 'ecom.Bitm.SwagLabs.Product.ProductPage_Test')
+data.setCell(14, 3, 415);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'loginInvalid')
+data.setCell(15, 2, 'ecom.Bitm.SwagLabs.login.Loginpage_Test')
+data.setCell(15, 3, 413);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'loginInvalid')
+data.setCell(16, 2, 'ecom.Bitm.SwagLabs.login.Loginpage_Test')
+data.setCell(16, 3, 408);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'loginInvalid')
+data.setCell(17, 2, 'ecom.Bitm.SwagLabs.login.Loginpage_Test')
+data.setCell(17, 3, 384);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'loginInvalid')
+data.setCell(18, 2, 'ecom.Bitm.SwagLabs.login.Loginpage_Test')
+data.setCell(18, 3, 373);
+window.suiteTableData['Negative_Test_cases']= { tableData: data, tableDiv: 'times-div-Negative_Test_cases'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <div id="times-div-Negative_Test_cases">
+              </div> <!-- times-div-Negative_Test_cases -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Negative_Test_cases" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Negative Test cases</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">loginInvalid(standard_user    , secret_sauce)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Login rejected for Username: standard_user    </span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CorrespondingProductPage(Sauce Labs Bolt T-Shirt)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Corresponding Product is navigated: Sauce Labs Bolt T-Shirt</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">VerifyCartBadge</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Product cart page is updated</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">loginInvalid(invalid_username, secret_sauce)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Login rejected for Username: invalid_username</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">loginInvalid(, )</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Login rejected for Username: </span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifySortingAfterAddingItem(Name (A to Z))</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">TC_036 - Sorting works after adding item: Name (A to Z)</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">loginInvalid(    standard_user, secret_sauce)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Login rejected for Username:     standard_user</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CorrespondingProductPage(Sauce Labs Bike Light)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Corresponding Product is navigated: Sauce Labs Bike Light</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">loginInvalid(, secret_sauce)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Login rejected for Username: </span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">loginInvalid(invalid_username, invalid_password)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Login rejected for Username: invalid_username</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CorrespondingProductPage(Sauce Labs Onesie)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Corresponding Product is navigated: Sauce Labs Onesie</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifySortingAfterAddingItem(Price (low to high))</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">TC_036 - Sorting works after adding item: Price (low to high)</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">loginInvalid(standard_user, invalid_password)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Login rejected for Username: standard_user</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifySortingAfterAddingItem(Price (high to low))</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">TC_036 - Sorting works after adding item: Price (high to low)</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CorrespondingProductPage(Test.allTheThings() T-Shirt)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Product is not available:Test.allTheThings() T-Shirt</span>
+                <span class="reporter-method-output">Corresponding Product is navigated: Test.allTheThings() T-Shirt</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CorrespondingProductPage(Sauce Labs Fleece Jacket)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Corresponding Product is navigated: Sauce Labs Fleece Jacket</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">loginInvalid(standard_user, )</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Login rejected for Username: standard_user</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CorrespondingProductPage(Sauce Labs Backpack)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Corresponding Product is navigated: Sauce Labs Backpack</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifySortingAfterAddingItem(Name (Z to A))</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">TC_036 - Sorting works after adding item: Name (Z to A)</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Negative_Test_cases" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">19 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyAllSortOptions</span>
+                <br/>
+                <span class="ignored-method-name">lowToHighSort</span>
+                <br/>
+                <span class="ignored-method-name">DropdownVisible</span>
+                <br/>
+                <span class="ignored-method-name">verifyNameAZ</span>
+                <br/>
+                <span class="ignored-method-name">verifySortingDoesNotLoseProducts</span>
+                <br/>
+                <span class="ignored-method-name">verifyHighToLowSort</span>
+                <br/>
+                <span class="ignored-method-name">verifyEachSortOption</span>
+                <br/>
+                <span class="ignored-method-name">verifyNameZA</span>
+                <br/>
+                <span class="ignored-method-name">verifyDefaultSortOrder</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">ecom.Bitm.SwagLabs.Product.ProductPage_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">Productpagerefresh</span>
+                <br/>
+                <span class="ignored-method-name">productNavigationMenu</span>
+                <br/>
+                <span class="ignored-method-name">Productpage1</span>
+                <br/>
+                <span class="ignored-method-name">productVisibleData</span>
+                <br/>
+                <span class="ignored-method-name">productcartnavigation</span>
+                <br/>
+                <span class="ignored-method-name">productCartControl</span>
+                <br/>
+                <span class="ignored-method-name">productvisible</span>
+                <br/>
+                <span class="ignored-method-name">ExpectedProduct</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">ecom.Bitm.SwagLabs.login.Loginpage_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">loginverify</span>
+                <br/>
+                <span class="ignored-method-name">loginvalid</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Negative_Test_cases" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">ecom.Bitm.SwagLabs.login.Loginpage_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">3407 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginInvalid(invalid_username, invalid_password)</span>
+                <span class="method-start">4652 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">5255 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginInvalid(invalid_username, secret_sauce)</span>
+                <span class="method-start">5332 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">5850 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginInvalid(standard_user, invalid_password)</span>
+                <span class="method-start">5904 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">6319 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginInvalid(, secret_sauce)</span>
+                <span class="method-start">6373 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">6784 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginInvalid(standard_user, )</span>
+                <span class="method-start">6839 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">7225 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginInvalid(, )</span>
+                <span class="method-start">7285 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">7659 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginInvalid(standard_user    , secret_sauce)</span>
+                <span class="method-start">7721 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">8172 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginInvalid(    standard_user, secret_sauce)</span>
+                <span class="method-start">8230 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">8665 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ecom.Bitm.SwagLabs.Product.ProductPage_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">9047 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">10496 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CorrespondingProductPage(Sauce Labs Backpack)</span>
+                <span class="method-start">11439 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">12022 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CorrespondingProductPage(Sauce Labs Bike Light)</span>
+                <span class="method-start">12116 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">12535 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CorrespondingProductPage(Sauce Labs Bolt T-Shirt)</span>
+                <span class="method-start">12600 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">13029 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CorrespondingProductPage(Sauce Labs Fleece Jacket)</span>
+                <span class="method-start">13091 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">13516 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CorrespondingProductPage(Sauce Labs Onesie)</span>
+                <span class="method-start">13587 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">14064 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CorrespondingProductPage(Test.allTheThings() T-Shirt)</span>
+                <span class="method-start">14138 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">14859 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyCartBadge</span>
+                <span class="method-start">14927 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">17460 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">17873 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">19287 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySortingAfterAddingItem(Name (A to Z))</span>
+                <span class="method-start">24682 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">26029 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySortingAfterAddingItem(Name (Z to A))</span>
+                <span class="method-start">26121 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">27243 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySortingAfterAddingItem(Price (low to high))</span>
+                <span class="method-start">27306 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">28356 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySortingAfterAddingItem(Price (high to low))</span>
+                <span class="method-start">28430 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">29492 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

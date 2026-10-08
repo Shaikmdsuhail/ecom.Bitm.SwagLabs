@@ -1,0 +1,609 @@
+<html>
+<head>
+<title>TestNG:  Parallel Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Parallel Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>44/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Oct 08 10:03:05 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>36 seconds (36591 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='DropDown.DropDownPageTest.lowToHighSort()'><b>lowToHighSort</b><br>Test class: DropDown.DropDownPageTest<br/>
+<a href="#Output-1231490083" onClick='toggleBox("Output-1231490083", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1231490083" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1231490083">
+TC_032 - Price low-to-high sorting verified<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>DropDown.DropDownPageTest@477b4cdf</td></tr>
+<tr>
+<td title='LoginPackage.SauceDemoTest.loginInvalid()'><b>loginInvalid</b><br>Test class: LoginPackage.SauceDemoTest<br>Parameters: , <br/>
+<a href="#Output-424262029" onClick='toggleBox("Output-424262029", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-424262029" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-424262029">
+Login rejected for Username: <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginPackage.SauceDemoTest@217ed35e</td></tr>
+<tr>
+<td title='DropDown.DropDownPageTest.verifyHighToLowSort()'><b>verifyHighToLowSort</b><br>Test class: DropDown.DropDownPageTest<br/>
+<a href="#Output-115582821" onClick='toggleBox("Output-115582821", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-115582821" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-115582821">
+TC_040 - Price high-to-low sorting verified<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>DropDown.DropDownPageTest@477b4cdf</td></tr>
+<tr>
+<td title='DropDown.DropDownPageTest.verifySortingDoesNotLoseProducts()'><b>verifySortingDoesNotLoseProducts</b><br>Test class: DropDown.DropDownPageTest<br>Parameters: Price (high to low)<br/>
+<a href="#Output-310490505" onClick='toggleBox("Output-310490505", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-310490505" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-310490505">
+TC_035 - Product count remains intact: Price (high to low)<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>DropDown.DropDownPageTest@477b4cdf</td></tr>
+<tr>
+<td title='ProductPackage.ProductPageTest.CorrespondingProductPage()'><b>CorrespondingProductPage</b><br>Test class: ProductPackage.ProductPageTest<br>Parameters: Sauce Labs Bolt T-Shirt<br/>
+<a href="#Output-405593440" onClick='toggleBox("Output-405593440", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-405593440" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-405593440">
+Corresponding Product is navigated: Sauce Labs Bolt T-Shirt<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>ProductPackage.ProductPageTest@3eb25e1a</td></tr>
+<tr>
+<td title='LoginPackage.SauceDemoTest.loginvalid()'><b>loginvalid</b><br>Test class: LoginPackage.SauceDemoTest<br/>
+<a href="#Output-230008121" onClick='toggleBox("Output-230008121", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-230008121" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-230008121">
+Valid login executed successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginPackage.SauceDemoTest@217ed35e</td></tr>
+<tr>
+<td title='DropDown.DropDownPageTest.verifyEachSortOption()'><b>verifyEachSortOption</b><br>Test class: DropDown.DropDownPageTest<br>Parameters: Price (low to high)<br/>
+<a href="#Output-1112694877" onClick='toggleBox("Output-1112694877", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1112694877" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1112694877">
+TC_034 - Correct ordering verified: Price (low to high)<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>DropDown.DropDownPageTest@477b4cdf</td></tr>
+<tr>
+<td title='DropDown.DropDownPageTest.verifySortingAfterAddingItem()'><b>verifySortingAfterAddingItem</b><br>Test class: DropDown.DropDownPageTest<br>Parameters: Name (Z to A)<br/>
+<a href="#Output-1839882747" onClick='toggleBox("Output-1839882747", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1839882747" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1839882747">
+TC_036 - Sorting works after adding item: Name (Z to A)<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>DropDown.DropDownPageTest@477b4cdf</td></tr>
+<tr>
+<td title='LoginPackage.SauceDemoTest.loginInvalid()'><b>loginInvalid</b><br>Test class: LoginPackage.SauceDemoTest<br>Parameters:     standard_user, secret_sauce<br/>
+<a href="#Output-274355528" onClick='toggleBox("Output-274355528", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-274355528" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-274355528">
+Login rejected for Username:     standard_user<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginPackage.SauceDemoTest@217ed35e</td></tr>
+<tr>
+<td title='DropDown.DropDownPageTest.verifyAllSortOptions()'><b>verifyAllSortOptions</b><br>Test class: DropDown.DropDownPageTest<br/>
+<a href="#Output-939214504" onClick='toggleBox("Output-939214504", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-939214504" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-939214504">
+TC_033 - All expected sorting options are available<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>DropDown.DropDownPageTest@477b4cdf</td></tr>
+<tr>
+<td title='LoginPackage.SauceDemoTest.loginverify()'><b>loginverify</b><br>Test class: LoginPackage.SauceDemoTest<br/>
+<a href="#Output-1987515682" onClick='toggleBox("Output-1987515682", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1987515682" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1987515682">
+Login page is displayed with username, password and Login controls<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>LoginPackage.SauceDemoTest@217ed35e</td></tr>
+<tr>
+<td title='ProductPackage.ProductPageTest.productVisibleData()'><b>productVisibleData</b><br>Test class: ProductPackage.ProductPageTest<br/>
+<a href="#Output-1370782369" onClick='toggleBox("Output-1370782369", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1370782369" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1370782369">
+Product data is visible<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ProductPackage.ProductPageTest@3eb25e1a</td></tr>
+<tr>
+<td title='DropDown.DropDownPageTest.verifyDefaultSortOrder()'><b>verifyDefaultSortOrder</b><br>Test class: DropDown.DropDownPageTest<br/>
+<a href="#Output-1297078426" onClick='toggleBox("Output-1297078426", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1297078426" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1297078426">
+TC_037 - Default sort order verified<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>DropDown.DropDownPageTest@477b4cdf</td></tr>
+<tr>
+<td title='ProductPackage.ProductPageTest.Productpage1()'><b>Productpage1</b><br>Test class: ProductPackage.ProductPageTest<br/>
+<a href="#Output-371266809" onClick='toggleBox("Output-371266809", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-371266809" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-371266809">
+Product page is visible<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ProductPackage.ProductPageTest@3eb25e1a</td></tr>
+<tr>
+<td title='ProductPackage.ProductPageTest.VerifyCartBadge()'><b>VerifyCartBadge</b><br>Test class: ProductPackage.ProductPageTest<br/>
+<a href="#Output-1511232907" onClick='toggleBox("Output-1511232907", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1511232907" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1511232907">
+Product cart page is updated<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ProductPackage.ProductPageTest@3eb25e1a</td></tr>
+<tr>
+<td title='DropDown.DropDownPageTest.DropdownVisible()'><b>DropdownVisible</b><br>Test class: DropDown.DropDownPageTest<br/>
+<a href="#Output-267183799" onClick='toggleBox("Output-267183799", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-267183799" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-267183799">
+TC_031 - Sort dropdown is visible and enabled<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>DropDown.DropDownPageTest@477b4cdf</td></tr>
+<tr>
+<td title='LoginPackage.SauceDemoTest.loginInvalid()'><b>loginInvalid</b><br>Test class: LoginPackage.SauceDemoTest<br>Parameters: invalid_username, invalid_password<br/>
+<a href="#Output-172462748" onClick='toggleBox("Output-172462748", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-172462748" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-172462748">
+Login rejected for Username: invalid_username<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>LoginPackage.SauceDemoTest@217ed35e</td></tr>
+<tr>
+<td title='DropDown.DropDownPageTest.verifySortingAfterAddingItem()'><b>verifySortingAfterAddingItem</b><br>Test class: DropDown.DropDownPageTest<br>Parameters: Price (low to high)<br/>
+<a href="#Output-1798555887" onClick='toggleBox("Output-1798555887", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1798555887" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1798555887">
+TC_036 - Sorting works after adding item: Price (low to high)<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>DropDown.DropDownPageTest@477b4cdf</td></tr>
+<tr>
+<td title='ProductPackage.ProductPageTest.productvisible()'><b>productvisible</b><br>Test class: ProductPackage.ProductPageTest<br/>
+<a href="#Output-1395921961" onClick='toggleBox("Output-1395921961", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1395921961" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1395921961">
+Products are visible<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>ProductPackage.ProductPageTest@3eb25e1a</td></tr>
+<tr>
+<td title='LoginPackage.SauceDemoTest.loginInvalid()'><b>loginInvalid</b><br>Test class: LoginPackage.SauceDemoTest<br>Parameters: standard_user, invalid_password<br/>
+<a href="#Output-499416933" onClick='toggleBox("Output-499416933", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-499416933" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-499416933">
+Login rejected for Username: standard_user<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>LoginPackage.SauceDemoTest@217ed35e</td></tr>
+<tr>
+<td title='ProductPackage.ProductPageTest.CorrespondingProductPage()'><b>CorrespondingProductPage</b><br>Test class: ProductPackage.ProductPageTest<br>Parameters: Test.allTheThings() T-Shirt<br/>
+<a href="#Output-1497214684" onClick='toggleBox("Output-1497214684", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1497214684" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1497214684">
+Product is not available:Test.allTheThings() T-Shirt<br/>
+Corresponding Product is navigated: Test.allTheThings() T-Shirt<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ProductPackage.ProductPageTest@3eb25e1a</td></tr>
+<tr>
+<td title='ProductPackage.ProductPageTest.CorrespondingProductPage()'><b>CorrespondingProductPage</b><br>Test class: ProductPackage.ProductPageTest<br>Parameters: Sauce Labs Fleece Jacket<br/>
+<a href="#Output-957995131" onClick='toggleBox("Output-957995131", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-957995131" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-957995131">
+Corresponding Product is navigated: Sauce Labs Fleece Jacket<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>ProductPackage.ProductPageTest@3eb25e1a</td></tr>
+<tr>
+<td title='DropDown.DropDownPageTest.verifyEachSortOption()'><b>verifyEachSortOption</b><br>Test class: DropDown.DropDownPageTest<br>Parameters: Price (high to low)<br/>
+<a href="#Output-1930972987" onClick='toggleBox("Output-1930972987", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1930972987" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1930972987">
+TC_034 - Correct ordering verified: Price (high to low)<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>DropDown.DropDownPageTest@477b4cdf</td></tr>
+<tr>
+<td title='LoginPackage.SauceDemoTest.loginInvalid()'><b>loginInvalid</b><br>Test class: LoginPackage.SauceDemoTest<br>Parameters: invalid_username, secret_sauce<br/>
+<a href="#Output-1836165846" onClick='toggleBox("Output-1836165846", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1836165846" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1836165846">
+Login rejected for Username: invalid_username<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginPackage.SauceDemoTest@217ed35e</td></tr>
+<tr>
+<td title='DropDown.DropDownPageTest.verifySortingAfterAddingItem()'><b>verifySortingAfterAddingItem</b><br>Test class: DropDown.DropDownPageTest<br>Parameters: Name (A to Z)<br/>
+<a href="#Output-1372107439" onClick='toggleBox("Output-1372107439", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1372107439" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1372107439">
+TC_036 - Sorting works after adding item: Name (A to Z)<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>DropDown.DropDownPageTest@477b4cdf</td></tr>
+<tr>
+<td title='ProductPackage.ProductPageTest.ExpectedProduct()'><b>ExpectedProduct</b><br>Test class: ProductPackage.ProductPageTest<br/>
+<a href="#Output-312926849" onClick='toggleBox("Output-312926849", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-312926849" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-312926849">
+Expected product is visible<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ProductPackage.ProductPageTest@3eb25e1a</td></tr>
+<tr>
+<td title='DropDown.DropDownPageTest.verifySortingAfterAddingItem()'><b>verifySortingAfterAddingItem</b><br>Test class: DropDown.DropDownPageTest<br>Parameters: Price (high to low)<br/>
+<a href="#Output-1684408129" onClick='toggleBox("Output-1684408129", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1684408129" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1684408129">
+TC_036 - Sorting works after adding item: Price (high to low)<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>DropDown.DropDownPageTest@477b4cdf</td></tr>
+<tr>
+<td title='DropDown.DropDownPageTest.verifyNameAZ()'><b>verifyNameAZ</b><br>Test class: DropDown.DropDownPageTest<br/>
+<a href="#Output-2101055388" onClick='toggleBox("Output-2101055388", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2101055388" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2101055388">
+TC_038 - Name A-Z sorting verified<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>DropDown.DropDownPageTest@477b4cdf</td></tr>
+<tr>
+<td title='DropDown.DropDownPageTest.verifyEachSortOption()'><b>verifyEachSortOption</b><br>Test class: DropDown.DropDownPageTest<br>Parameters: Name (Z to A)<br/>
+<a href="#Output-980741917" onClick='toggleBox("Output-980741917", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-980741917" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-980741917">
+TC_034 - Correct ordering verified: Name (Z to A)<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>DropDown.DropDownPageTest@477b4cdf</td></tr>
+<tr>
+<td title='DropDown.DropDownPageTest.verifyEachSortOption()'><b>verifyEachSortOption</b><br>Test class: DropDown.DropDownPageTest<br>Parameters: Name (A to Z)<br/>
+<a href="#Output-2030747814" onClick='toggleBox("Output-2030747814", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2030747814" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2030747814">
+TC_034 - Correct ordering verified: Name (A to Z)<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>DropDown.DropDownPageTest@477b4cdf</td></tr>
+<tr>
+<td title='DropDown.DropDownPageTest.verifySortingDoesNotLoseProducts()'><b>verifySortingDoesNotLoseProducts</b><br>Test class: DropDown.DropDownPageTest<br>Parameters: Price (low to high)<br/>
+<a href="#Output-652665035" onClick='toggleBox("Output-652665035", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-652665035" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-652665035">
+TC_035 - Product count remains intact: Price (low to high)<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>DropDown.DropDownPageTest@477b4cdf</td></tr>
+<tr>
+<td title='LoginPackage.SauceDemoTest.loginInvalid()'><b>loginInvalid</b><br>Test class: LoginPackage.SauceDemoTest<br>Parameters: standard_user, <br/>
+<a href="#Output-884747026" onClick='toggleBox("Output-884747026", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-884747026" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-884747026">
+Login rejected for Username: standard_user<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>LoginPackage.SauceDemoTest@217ed35e</td></tr>
+<tr>
+<td title='LoginPackage.SauceDemoTest.loginInvalid()'><b>loginInvalid</b><br>Test class: LoginPackage.SauceDemoTest<br>Parameters: , secret_sauce<br/>
+<a href="#Output-493244745" onClick='toggleBox("Output-493244745", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-493244745" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-493244745">
+Login rejected for Username: <br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>LoginPackage.SauceDemoTest@217ed35e</td></tr>
+<tr>
+<td title='ProductPackage.ProductPageTest.productNavigationMenu()'><b>productNavigationMenu</b><br>Test class: ProductPackage.ProductPageTest<br/>
+<a href="#Output-1922482471" onClick='toggleBox("Output-1922482471", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1922482471" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1922482471">
+Navigation menu is working<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ProductPackage.ProductPageTest@3eb25e1a</td></tr>
+<tr>
+<td title='DropDown.DropDownPageTest.verifyNameZA()'><b>verifyNameZA</b><br>Test class: DropDown.DropDownPageTest<br/>
+<a href="#Output-465695792" onClick='toggleBox("Output-465695792", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-465695792" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-465695792">
+TC_039 - Name Z-A sorting verified<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>DropDown.DropDownPageTest@477b4cdf</td></tr>
+<tr>
+<td title='ProductPackage.ProductPageTest.CorrespondingProductPage()'><b>CorrespondingProductPage</b><br>Test class: ProductPackage.ProductPageTest<br>Parameters: Sauce Labs Onesie<br/>
+<a href="#Output-1662764329" onClick='toggleBox("Output-1662764329", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1662764329" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1662764329">
+Corresponding Product is navigated: Sauce Labs Onesie<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>ProductPackage.ProductPageTest@3eb25e1a</td></tr>
+<tr>
+<td title='ProductPackage.ProductPageTest.CorrespondingProductPage()'><b>CorrespondingProductPage</b><br>Test class: ProductPackage.ProductPageTest<br>Parameters: Sauce Labs Backpack<br/>
+<a href="#Output-1708275424" onClick='toggleBox("Output-1708275424", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1708275424" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1708275424">
+Corresponding Product is navigated: Sauce Labs Backpack<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>ProductPackage.ProductPageTest@3eb25e1a</td></tr>
+<tr>
+<td title='ProductPackage.ProductPageTest.productCartControl()'><b>productCartControl</b><br>Test class: ProductPackage.ProductPageTest<br/>
+<a href="#Output-194677288" onClick='toggleBox("Output-194677288", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-194677288" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-194677288">
+Every product has cart control<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ProductPackage.ProductPageTest@3eb25e1a</td></tr>
+<tr>
+<td title='ProductPackage.ProductPageTest.productcartnavigation()'><b>productcartnavigation</b><br>Test class: ProductPackage.ProductPageTest<br/>
+<a href="#Output-1179900192" onClick='toggleBox("Output-1179900192", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1179900192" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1179900192">
+Cart icon is clickable<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>ProductPackage.ProductPageTest@3eb25e1a</td></tr>
+<tr>
+<td title='ProductPackage.ProductPageTest.CorrespondingProductPage()'><b>CorrespondingProductPage</b><br>Test class: ProductPackage.ProductPageTest<br>Parameters: Sauce Labs Bike Light<br/>
+<a href="#Output-1295399107" onClick='toggleBox("Output-1295399107", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1295399107" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1295399107">
+Corresponding Product is navigated: Sauce Labs Bike Light<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>ProductPackage.ProductPageTest@3eb25e1a</td></tr>
+<tr>
+<td title='DropDown.DropDownPageTest.verifySortingDoesNotLoseProducts()'><b>verifySortingDoesNotLoseProducts</b><br>Test class: DropDown.DropDownPageTest<br>Parameters: Name (Z to A)<br/>
+<a href="#Output-1574623778" onClick='toggleBox("Output-1574623778", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1574623778" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1574623778">
+TC_035 - Product count remains intact: Name (Z to A)<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>DropDown.DropDownPageTest@477b4cdf</td></tr>
+<tr>
+<td title='LoginPackage.SauceDemoTest.loginInvalid()'><b>loginInvalid</b><br>Test class: LoginPackage.SauceDemoTest<br>Parameters: standard_user    , secret_sauce<br/>
+<a href="#Output-1978165138" onClick='toggleBox("Output-1978165138", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1978165138" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1978165138">
+Login rejected for Username: standard_user    <br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>LoginPackage.SauceDemoTest@217ed35e</td></tr>
+<tr>
+<td title='ProductPackage.ProductPageTest.Productpagerefresh()'><b>Productpagerefresh</b><br>Test class: ProductPackage.ProductPageTest<br/>
+<a href="#Output-1347304755" onClick='toggleBox("Output-1347304755", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1347304755" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1347304755">
+User is logged in After refresh<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ProductPackage.ProductPageTest@3eb25e1a</td></tr>
+<tr>
+<td title='DropDown.DropDownPageTest.verifySortingDoesNotLoseProducts()'><b>verifySortingDoesNotLoseProducts</b><br>Test class: DropDown.DropDownPageTest<br>Parameters: Name (A to Z)<br/>
+<a href="#Output-930566345" onClick='toggleBox("Output-930566345", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-930566345" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-930566345">
+TC_035 - Product count remains intact: Name (A to Z)<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>DropDown.DropDownPageTest@477b4cdf</td></tr>
+</table><p>
+</body>
+</html>

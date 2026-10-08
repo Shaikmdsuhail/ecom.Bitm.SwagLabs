@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Negative Test cases">
+  <groups>
+		<run>
+			<include name="neg" />
+		</run>
+	</groups>
+
+	<test name="Negative Tests">
+
+		<classes>
+      <class name="ecom.Bitm.SwagLabs.login.Loginpage_Test"/>
+      <class name="ecom.Bitm.SwagLabs.Product.ProductPage_Test"/>
+      <class name="ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test"></class>
+
+		</classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

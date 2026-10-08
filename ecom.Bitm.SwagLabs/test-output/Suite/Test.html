@@ -1,0 +1,609 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>44/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Oct 08 12:08:44 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>45 seconds (45039 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.Product.ProductPage_Test.productVisibleData()'><b>productVisibleData</b><br>Test class: ecom.Bitm.SwagLabs.Product.ProductPage_Test<br/>
+<a href="#Output-773765215" onClick='toggleBox("Output-773765215", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-773765215" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-773765215">
+Product data is visible<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.SwagLabs.Product.ProductPage_Test@3eb25e1a</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test.verifyNameAZ()'><b>verifyNameAZ</b><br>Test class: ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test<br/>
+<a href="#Output-1604238682" onClick='toggleBox("Output-1604238682", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1604238682" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1604238682">
+TC_038 - Name A-Z sorting verified<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test@477b4cdf</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.Product.ProductPage_Test.CorrespondingProductPage()'><b>CorrespondingProductPage</b><br>Test class: ecom.Bitm.SwagLabs.Product.ProductPage_Test<br>Parameters: Test.allTheThings() T-Shirt<br/>
+<a href="#Output-1620643420" onClick='toggleBox("Output-1620643420", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1620643420" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1620643420">
+Product is not available:Test.allTheThings() T-Shirt<br/>
+Corresponding Product is navigated: Test.allTheThings() T-Shirt<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.SwagLabs.Product.ProductPage_Test@3eb25e1a</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test.verifySortingAfterAddingItem()'><b>verifySortingAfterAddingItem</b><br>Test class: ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test<br>Parameters: Name (A to Z)<br/>
+<a href="#Output-441004239" onClick='toggleBox("Output-441004239", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-441004239" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-441004239">
+TC_036 - Sorting works after adding item: Name (A to Z)<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test@477b4cdf</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test.verifySortingAfterAddingItem()'><b>verifySortingAfterAddingItem</b><br>Test class: ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test<br>Parameters: Name (Z to A)<br/>
+<a href="#Output-1720072513" onClick='toggleBox("Output-1720072513", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1720072513" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1720072513">
+TC_036 - Sorting works after adding item: Name (Z to A)<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test@477b4cdf</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test.verifyNameZA()'><b>verifyNameZA</b><br>Test class: ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test<br/>
+<a href="#Output-1749286340" onClick='toggleBox("Output-1749286340", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1749286340" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1749286340">
+TC_039 - Name Z-A sorting verified<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test@477b4cdf</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.Product.ProductPage_Test.ExpectedProduct()'><b>ExpectedProduct</b><br>Test class: ecom.Bitm.SwagLabs.Product.ProductPage_Test<br/>
+<a href="#Output-428061834" onClick='toggleBox("Output-428061834", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-428061834" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-428061834">
+Expected product is visible<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.SwagLabs.Product.ProductPage_Test@3eb25e1a</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.login.Loginpage_Test.loginvalid()'><b>loginvalid</b><br>Test class: ecom.Bitm.SwagLabs.login.Loginpage_Test<br/>
+<a href="#Output-1658534033" onClick='toggleBox("Output-1658534033", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1658534033" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1658534033">
+Valid login executed successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.SwagLabs.login.Loginpage_Test@217ed35e</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.Product.ProductPage_Test.productvisible()'><b>productvisible</b><br>Test class: ecom.Bitm.SwagLabs.Product.ProductPage_Test<br/>
+<a href="#Output-747378368" onClick='toggleBox("Output-747378368", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-747378368" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-747378368">
+Products are visible<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.SwagLabs.Product.ProductPage_Test@3eb25e1a</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.Product.ProductPage_Test.CorrespondingProductPage()'><b>CorrespondingProductPage</b><br>Test class: ecom.Bitm.SwagLabs.Product.ProductPage_Test<br>Parameters: Sauce Labs Fleece Jacket<br/>
+<a href="#Output-823405912" onClick='toggleBox("Output-823405912", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-823405912" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-823405912">
+Corresponding Product is navigated: Sauce Labs Fleece Jacket<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.SwagLabs.Product.ProductPage_Test@3eb25e1a</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.Product.ProductPage_Test.productCartControl()'><b>productCartControl</b><br>Test class: ecom.Bitm.SwagLabs.Product.ProductPage_Test<br/>
+<a href="#Output-1419958638" onClick='toggleBox("Output-1419958638", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1419958638" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1419958638">
+Every product has cart control<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.SwagLabs.Product.ProductPage_Test@3eb25e1a</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test.verifyDefaultSortOrder()'><b>verifyDefaultSortOrder</b><br>Test class: ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test<br/>
+<a href="#Output-1998372115" onClick='toggleBox("Output-1998372115", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1998372115" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1998372115">
+TC_037 - Default sort order verified<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test@477b4cdf</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test.verifyEachSortOption()'><b>verifyEachSortOption</b><br>Test class: ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test<br>Parameters: Price (high to low)<br/>
+<a href="#Output-989030690" onClick='toggleBox("Output-989030690", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-989030690" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-989030690">
+TC_034 - Correct ordering verified: Price (high to low)<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test@477b4cdf</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test.verifyEachSortOption()'><b>verifyEachSortOption</b><br>Test class: ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test<br>Parameters: Name (Z to A)<br/>
+<a href="#Output-570017514" onClick='toggleBox("Output-570017514", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-570017514" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-570017514">
+TC_034 - Correct ordering verified: Name (Z to A)<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test@477b4cdf</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.Product.ProductPage_Test.CorrespondingProductPage()'><b>CorrespondingProductPage</b><br>Test class: ecom.Bitm.SwagLabs.Product.ProductPage_Test<br>Parameters: Sauce Labs Bike Light<br/>
+<a href="#Output-1268786037" onClick='toggleBox("Output-1268786037", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1268786037" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1268786037">
+Corresponding Product is navigated: Sauce Labs Bike Light<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.SwagLabs.Product.ProductPage_Test@3eb25e1a</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.login.Loginpage_Test.loginInvalid()'><b>loginInvalid</b><br>Test class: ecom.Bitm.SwagLabs.login.Loginpage_Test<br>Parameters: standard_user    , secret_sauce<br/>
+<a href="#Output-1754087707" onClick='toggleBox("Output-1754087707", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1754087707" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1754087707">
+Login rejected for Username: standard_user    <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.SwagLabs.login.Loginpage_Test@217ed35e</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test.verifySortingDoesNotLoseProducts()'><b>verifySortingDoesNotLoseProducts</b><br>Test class: ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test<br>Parameters: Price (high to low)<br/>
+<a href="#Output-1663443057" onClick='toggleBox("Output-1663443057", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1663443057" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1663443057">
+TC_035 - Product count remains intact: Price (high to low)<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test@477b4cdf</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.login.Loginpage_Test.loginInvalid()'><b>loginInvalid</b><br>Test class: ecom.Bitm.SwagLabs.login.Loginpage_Test<br>Parameters:     standard_user, secret_sauce<br/>
+<a href="#Output-1107779742" onClick='toggleBox("Output-1107779742", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1107779742" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1107779742">
+Login rejected for Username:     standard_user<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.SwagLabs.login.Loginpage_Test@217ed35e</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test.verifyEachSortOption()'><b>verifyEachSortOption</b><br>Test class: ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test<br>Parameters: Name (A to Z)<br/>
+<a href="#Output-1361241279" onClick='toggleBox("Output-1361241279", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1361241279" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1361241279">
+TC_034 - Correct ordering verified: Name (A to Z)<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test@477b4cdf</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.login.Loginpage_Test.loginverify()'><b>loginverify</b><br>Test class: ecom.Bitm.SwagLabs.login.Loginpage_Test<br/>
+<a href="#Output-1491522744" onClick='toggleBox("Output-1491522744", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1491522744" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1491522744">
+Login page is displayed with username, password and Login controls<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.SwagLabs.login.Loginpage_Test@217ed35e</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test.verifySortingDoesNotLoseProducts()'><b>verifySortingDoesNotLoseProducts</b><br>Test class: ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test<br>Parameters: Name (A to Z)<br/>
+<a href="#Output-1407795127" onClick='toggleBox("Output-1407795127", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1407795127" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1407795127">
+TC_035 - Product count remains intact: Name (A to Z)<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test@477b4cdf</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.Product.ProductPage_Test.productNavigationMenu()'><b>productNavigationMenu</b><br>Test class: ecom.Bitm.SwagLabs.Product.ProductPage_Test<br/>
+<a href="#Output-1524744833" onClick='toggleBox("Output-1524744833", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1524744833" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1524744833">
+Navigation menu is working<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>ecom.Bitm.SwagLabs.Product.ProductPage_Test@3eb25e1a</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.Product.ProductPage_Test.CorrespondingProductPage()'><b>CorrespondingProductPage</b><br>Test class: ecom.Bitm.SwagLabs.Product.ProductPage_Test<br>Parameters: Sauce Labs Onesie<br/>
+<a href="#Output-763755364" onClick='toggleBox("Output-763755364", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-763755364" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-763755364">
+Corresponding Product is navigated: Sauce Labs Onesie<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.SwagLabs.Product.ProductPage_Test@3eb25e1a</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test.lowToHighSort()'><b>lowToHighSort</b><br>Test class: ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test<br/>
+<a href="#Output-748523772" onClick='toggleBox("Output-748523772", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-748523772" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-748523772">
+TC_032 - Price low-to-high sorting verified<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test@477b4cdf</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.login.Loginpage_Test.loginInvalid()'><b>loginInvalid</b><br>Test class: ecom.Bitm.SwagLabs.login.Loginpage_Test<br>Parameters: standard_user, <br/>
+<a href="#Output-975372289" onClick='toggleBox("Output-975372289", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-975372289" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-975372289">
+Login rejected for Username: standard_user<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.SwagLabs.login.Loginpage_Test@217ed35e</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test.verifySortingDoesNotLoseProducts()'><b>verifySortingDoesNotLoseProducts</b><br>Test class: ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test<br>Parameters: Price (low to high)<br/>
+<a href="#Output-716724378" onClick='toggleBox("Output-716724378", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-716724378" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-716724378">
+TC_035 - Product count remains intact: Price (low to high)<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test@477b4cdf</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.Product.ProductPage_Test.Productpage1()'><b>Productpage1</b><br>Test class: ecom.Bitm.SwagLabs.Product.ProductPage_Test<br/>
+<a href="#Output-843100836" onClick='toggleBox("Output-843100836", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-843100836" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-843100836">
+Product page is visible<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.SwagLabs.Product.ProductPage_Test@3eb25e1a</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.login.Loginpage_Test.loginInvalid()'><b>loginInvalid</b><br>Test class: ecom.Bitm.SwagLabs.login.Loginpage_Test<br>Parameters: invalid_username, secret_sauce<br/>
+<a href="#Output-892591894" onClick='toggleBox("Output-892591894", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-892591894" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-892591894">
+Login rejected for Username: invalid_username<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.SwagLabs.login.Loginpage_Test@217ed35e</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.login.Loginpage_Test.loginInvalid()'><b>loginInvalid</b><br>Test class: ecom.Bitm.SwagLabs.login.Loginpage_Test<br>Parameters: , secret_sauce<br/>
+<a href="#Output-1031479068" onClick='toggleBox("Output-1031479068", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1031479068" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1031479068">
+Login rejected for Username: <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.SwagLabs.login.Loginpage_Test@217ed35e</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.login.Loginpage_Test.loginInvalid()'><b>loginInvalid</b><br>Test class: ecom.Bitm.SwagLabs.login.Loginpage_Test<br>Parameters: , <br/>
+<a href="#Output-1907178890" onClick='toggleBox("Output-1907178890", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1907178890" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1907178890">
+Login rejected for Username: <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.SwagLabs.login.Loginpage_Test@217ed35e</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.login.Loginpage_Test.loginInvalid()'><b>loginInvalid</b><br>Test class: ecom.Bitm.SwagLabs.login.Loginpage_Test<br>Parameters: standard_user, invalid_password<br/>
+<a href="#Output-2016482777" onClick='toggleBox("Output-2016482777", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2016482777" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2016482777">
+Login rejected for Username: standard_user<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.SwagLabs.login.Loginpage_Test@217ed35e</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.Product.ProductPage_Test.productcartnavigation()'><b>productcartnavigation</b><br>Test class: ecom.Bitm.SwagLabs.Product.ProductPage_Test<br/>
+<a href="#Output-209667159" onClick='toggleBox("Output-209667159", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-209667159" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-209667159">
+Cart icon is clickable<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.SwagLabs.Product.ProductPage_Test@3eb25e1a</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test.verifyAllSortOptions()'><b>verifyAllSortOptions</b><br>Test class: ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test<br/>
+<a href="#Output-936544568" onClick='toggleBox("Output-936544568", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-936544568" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-936544568">
+TC_033 - All expected sorting options are available<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test@477b4cdf</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test.verifyHighToLowSort()'><b>verifyHighToLowSort</b><br>Test class: ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test<br/>
+<a href="#Output-136183278" onClick='toggleBox("Output-136183278", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-136183278" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-136183278">
+TC_040 - Price high-to-low sorting verified<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test@477b4cdf</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.login.Loginpage_Test.loginInvalid()'><b>loginInvalid</b><br>Test class: ecom.Bitm.SwagLabs.login.Loginpage_Test<br>Parameters: invalid_username, invalid_password<br/>
+<a href="#Output-146799499" onClick='toggleBox("Output-146799499", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-146799499" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-146799499">
+Login rejected for Username: invalid_username<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.SwagLabs.login.Loginpage_Test@217ed35e</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.Product.ProductPage_Test.CorrespondingProductPage()'><b>CorrespondingProductPage</b><br>Test class: ecom.Bitm.SwagLabs.Product.ProductPage_Test<br>Parameters: Sauce Labs Backpack<br/>
+<a href="#Output-683523720" onClick='toggleBox("Output-683523720", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-683523720" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-683523720">
+Corresponding Product is navigated: Sauce Labs Backpack<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.SwagLabs.Product.ProductPage_Test@3eb25e1a</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test.verifyEachSortOption()'><b>verifyEachSortOption</b><br>Test class: ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test<br>Parameters: Price (low to high)<br/>
+<a href="#Output-1750956965" onClick='toggleBox("Output-1750956965", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1750956965" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1750956965">
+TC_034 - Correct ordering verified: Price (low to high)<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test@477b4cdf</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.Product.ProductPage_Test.Productpagerefresh()'><b>Productpagerefresh</b><br>Test class: ecom.Bitm.SwagLabs.Product.ProductPage_Test<br/>
+<a href="#Output-590414408" onClick='toggleBox("Output-590414408", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-590414408" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-590414408">
+User is logged in After refresh<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.SwagLabs.Product.ProductPage_Test@3eb25e1a</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test.DropdownVisible()'><b>DropdownVisible</b><br>Test class: ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test<br/>
+<a href="#Output-1561480489" onClick='toggleBox("Output-1561480489", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1561480489" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1561480489">
+TC_031 - Sort dropdown is visible and enabled<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test@477b4cdf</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test.verifySortingAfterAddingItem()'><b>verifySortingAfterAddingItem</b><br>Test class: ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test<br>Parameters: Price (low to high)<br/>
+<a href="#Output-816196187" onClick='toggleBox("Output-816196187", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-816196187" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-816196187">
+TC_036 - Sorting works after adding item: Price (low to high)<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test@477b4cdf</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.Product.ProductPage_Test.CorrespondingProductPage()'><b>CorrespondingProductPage</b><br>Test class: ecom.Bitm.SwagLabs.Product.ProductPage_Test<br>Parameters: Sauce Labs Bolt T-Shirt<br/>
+<a href="#Output-805536380" onClick='toggleBox("Output-805536380", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-805536380" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-805536380">
+Corresponding Product is navigated: Sauce Labs Bolt T-Shirt<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.SwagLabs.Product.ProductPage_Test@3eb25e1a</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.Product.ProductPage_Test.VerifyCartBadge()'><b>VerifyCartBadge</b><br>Test class: ecom.Bitm.SwagLabs.Product.ProductPage_Test<br/>
+<a href="#Output-2141094945" onClick='toggleBox("Output-2141094945", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2141094945" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2141094945">
+Product cart page is updated<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ecom.Bitm.SwagLabs.Product.ProductPage_Test@3eb25e1a</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test.verifySortingDoesNotLoseProducts()'><b>verifySortingDoesNotLoseProducts</b><br>Test class: ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test<br>Parameters: Name (Z to A)<br/>
+<a href="#Output-178163105" onClick='toggleBox("Output-178163105", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-178163105" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-178163105">
+TC_035 - Product count remains intact: Name (Z to A)<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test@477b4cdf</td></tr>
+<tr>
+<td title='ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test.verifySortingAfterAddingItem()'><b>verifySortingAfterAddingItem</b><br>Test class: ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test<br>Parameters: Price (high to low)<br/>
+<a href="#Output-1725760738" onClick='toggleBox("Output-1725760738", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1725760738" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1725760738">
+TC_036 - Sorting works after adding item: Price (high to low)<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>ecom.Bitm.SwagLabs.dropDown.DropDownPage_Test@477b4cdf</td></tr>
+</table><p>
+</body>
+</html>

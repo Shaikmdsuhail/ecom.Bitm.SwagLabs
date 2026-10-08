@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="pos"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="DropDown.DropDownPageTest">
+        <methods>
+          <include name="verifyAllSortOptions"/>
+          <include name="verifyDefaultSortOrder"/>
+          <include name="verifyNameAZ"/>
+          <include name="DropdownVisible"/>
+          <include name="verifySortingDoesNotLoseProducts" invocation-numbers="0 1 2 3"/>
+          <include name="verifyNameZA"/>
+          <include name="verifyHighToLowSort"/>
+          <include name="verifyEachSortOption" invocation-numbers="0 1 2 3"/>
+          <include name="verifySortingAfterAddingItem" invocation-numbers="0 1 2 3"/>
+          <include name="lowToHighSort"/>
+        </methods>
+      </class> <!-- DropDown.DropDownPageTest -->
+      <class name="ProductPackage.ProductPageTest">
+        <methods>
+          <include name="ExpectedProduct"/>
+          <include name="Productpagerefresh"/>
+          <include name="productNavigationMenu"/>
+          <include name="productVisibleData"/>
+          <include name="CorrespondingProductPage" invocation-numbers="0 1 2 3 4 5"/>
+          <include name="Productpage1"/>
+          <include name="productCartControl"/>
+          <include name="productcartnavigation"/>
+          <include name="productvisible"/>
+          <include name="VerifyCartBadge"/>
+        </methods>
+      </class> <!-- ProductPackage.ProductPageTest -->
+      <class name="LoginPackage.SauceDemoTest">
+        <methods>
+          <include name="loginverify"/>
+          <include name="loginvalid"/>
+        </methods>
+      </class> <!-- LoginPackage.SauceDemoTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
